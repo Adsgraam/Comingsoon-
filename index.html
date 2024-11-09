@@ -20,6 +20,36 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            position: relative; /* Needed for positioning the back button */
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: linear-gradient(145deg, #2c3e50, #34495e); /* Dark blue gradient */
+            border: none;
+            color: white;
+            font-size: 0.75rem; /* Much smaller font size */
+            cursor: pointer;
+            padding: 6px 12px; /* Smaller padding */
+            border-radius: 15px; /* Even smaller rounded corners */
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Small shadow */
+            transition: all 0.3s ease; /* Smooth transition */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-button i {
+            margin-right: 4px; /* Space between the icon and text */
+        }
+
+        .back-button:hover {
+            background: linear-gradient(145deg, #34495e, #2c3e50); /* Inverse gradient on hover */
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+            transform: translateY(-1px); /* Lift the button slightly on hover */
         }
 
         .container {
@@ -79,6 +109,9 @@
     </style>
 </head>
 <body>
+    <button class="back-button" onclick="window.location.href='https://adsgraam.github.io/Home/'">
+        <i class="fas fa-arrow-left"></i>Back
+    </button>
     <div class="container">
         <div class="content">
             <i class="fab fa-telegram fa-5x"></i>
