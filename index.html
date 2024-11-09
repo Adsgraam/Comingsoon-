@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #0088cc; /* Telegram blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        i {
+            color: white;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Smaller title on tablets and below */
+            }
+
+            p {
+                font-size: 1rem; /* Smaller text for description */
+            }
+
+            i {
+                font-size: 4rem; /* Smaller icon on smaller devices */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem; /* Even smaller title on mobile */
+            }
+
+            p {
+                font-size: 0.9rem; /* Even smaller description text */
+            }
+
+            i {
+                font-size: 3.5rem; /* Smaller icon for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <i class="fab fa-telegram fa-5x"></i>
+            <h1>Coming Soon</h1>
+            <p>We are working on something awesome. Stay tuned!</p>
+        </div>
+    </div>
+</body>
+</html>
